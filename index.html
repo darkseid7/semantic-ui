@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DC Heores</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Css/custom.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="Css/semantic.min.css" />
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/icon.min.css'>
+    <link rel="stylesheet" href="Css/pnotify.css">
+</head>
+
+
+
+<body style="background-color:#e0d2d2;">
+    <!--Menú-->
+    <div class="ui stackable fluid menu raised">
+        <div class="item link ">
+            <img src="Css/img/dc.png">
+        </div>
+        <a class="link item">Inicio</a>
+        <a class="link item">Productos</a>
+        <a class="link item">Cómics</a>
+        <div class="right menu">
+            <div class="ui search">
+                <div class="ui icon input item">
+                    <input type="text" class="prompt" placeholder="Buscar">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Card-->
+    <div class="ui grid">
+        <div class="row">
+            <div class="four wide column">
+                <div class="ui card container raised">
+                    <div class="content">
+                        <div class="right floated meta">
+                            <i class="clock icon"></i> 14h
+                        </div>
+                        <img src="Css/img/dc.png" class="ui avatar image">Harold Jordan
+                    </div>
+                    <div class="image">
+                        <img src="Css/img/flashi.png">
+                    </div>
+                    <div class="content">
+                        <span class="right floated">
+                            <i class="heart icon"></i> 17 Likes
+                        </span>
+                        <i class="comment icon"></i> 3 comentarios
+                    </div>
+                    <div class="extra content ">
+                        <div class="ui two buttons">
+                            <div class="ui green toggle basic  button" id="seguir" onclick="follow()">following</div>
+                            <div class="ui teal basic  button" id="mod3" onclick="modp3()">Donate</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+            <!--Flash-->
+            <div class="nine wide column">
+
+                <div class="ui raised very padded text container segment ">
+                    <h2 class="ui header">Flash</h2>
+                    <img src="Css/img/flash2.png" class="ui medium right  floated circular image">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id eaque sint culpa excepturi possimus
+                        repellendus, ducimus exercitationem molestias voluptate a illum adipisci eius iusto mollitia
+                        fugiat
+                        assumenda aliquam suscipit ullam!</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis tenetur ut excepturi porro
+                        officia
+                        dolorem
+                        commodi ad tempora alias? Veritatis itaque illum, fugiat nesciunt id exercitationem ea
+                        deserunt?
+                        Dicta, in.</p>
+
+                    <div class="ui divider"></div>
+                    <div class="ui animated fade button" tabindex="0">
+                        <div class="visible content">Cómpralo ya!</div>
+                        <div class="hidden content">
+                            $250.000.00
+                        </div>
+                    </div>
+                    <div class="ui vertical animated button positive" tabindex="0">
+                        <div class="hidden content">Add</div>
+                        <div class="visible content ">
+                            <i class="shop icon"></i>
+                        </div>
+                    </div>
+                    <div class="ui left labeled button" tabindex="0">
+                        <a class="ui basic right pointing label">
+                            1,048
+                        </a>
+                        <div class="ui button">
+                            <i class="heart icon red"></i>
+                        </div>
+                    </div>
+                    <button class="ui right floated button circular ui icon button pop" id="mod" onclick="modp()"
+                        data-position="top center" data-content="Más información">
+                        <i class="exclamation circle icon "></i>
+                    </button>
+                    <div class="ui divider"></div>
+                </div>
+                <!-- Batman -->
+                <div class="ui raised very padded text container segment">
+                    <h2 class="ui header">Batman</h2>
+                    <img src="Css/img/batman.png" class="ui medium right floated circular image">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id eaque sint culpa excepturi possimus
+                        repellendus, ducimus exercitationem molestias voluptate a illum adipisci eius iusto mollitia
+                        fugiat
+                        assumenda aliquam suscipit ullam!</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis tenetur ut excepturi porro
+                        officia
+                        dolorem
+                        commodi ad tempora alias? Veritatis itaque illum, fugiat nesciunt id exercitationem ea
+                        deserunt?
+                        Dicta, in.</p>
+
+                    <div class="ui divider"></div>
+                    <div class="ui animated fade button" tabindex="0">
+                        <div class="visible content">Cómpralo ya!</div>
+                        <div class="hidden content">
+                            $150.000.00
+                        </div>
+                    </div>
+                    <div class="ui vertical animated button positive" tabindex="0">
+                        <div class="hidden content">Add</div>
+                        <div class="visible content">
+                            <i class="shop icon"></i>
+                        </div>
+                    </div>
+                    <div class="ui left labeled button " tabindex="0">
+                        <a class="ui basic right pointing label">
+                            1,800
+                        </a>
+                        <div class="ui button">
+                            <i class="heart icon red"></i>
+                        </div>
+                    </div>
+                    <button class="ui right floated button circular ui icon button pop " id="mod2" onclick="modp2()"
+                        data-position="top center" data-content="Más información">
+                        <i class="exclamation circle icon"></i>
+                    </button>
+                    <div class="ui divider"></div>
+                </div>
+                <!--Linterna verde-->
+                <div class="ui raised very padded text container segment ">
+                    <h2 class="ui header">Green Lantern</h2>
+                    <img src="Css/img/gl.png" class="ui medium right  floated circular image">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id eaque sint culpa excepturi possimus
+                        repellendus, ducimus exercitationem molestias voluptate a illum adipisci eius iusto mollitia
+                        fugiat
+                        assumenda aliquam suscipit ullam!</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis tenetur ut excepturi porro
+                        officia
+                        dolorem
+                        commodi ad tempora alias? Veritatis itaque illum, fugiat nesciunt id exercitationem ea
+                        deserunt?
+                        Dicta, in.</p>
+
+                    <div class="ui divider"></div>
+                    <div class="ui animated fade button" tabindex="0">
+                        <div class="visible content">Cómpralo ya!</div>
+                        <div class="hidden content">
+                            $250.000.00
+                        </div>
+                    </div>
+                    <div class="ui vertical animated button positive" tabindex="0">
+                        <div class="hidden content">Add</div>
+                        <div class="visible content ">
+                            <i class="shop icon"></i>
+                        </div>
+                    </div>
+                    <div class="ui left labeled button" tabindex="0">
+                        <a class="ui basic right pointing label">
+                            1,048
+                        </a>
+                        <div class="ui button">
+                            <i class="heart icon red"></i>
+                        </div>
+                    </div>
+                    <button class="ui right floated button circular ui icon button pop" id="mod" onclick="modp()"
+                        data-position="top center" data-content="Más información">
+                        <i class="exclamation circle icon "></i>
+                    </button>
+                    <div class="ui divider"></div>
+                </div>
+                
+            </div>
+                            <!--Sesión-->
+                            <div>
+                            <div class="ui raised container card  segment">
+                                    <div class="content">
+                
+                                    </div>
+                                    <div class="content">
+                                        <div class="ui form">
+                                            <h3 class="ui aligned  center">Inicia Sesión.</h3>
+                                            <div class="field ">
+                                                <input type="text" name="" id="" placeholder="Usuario">
+                                            </div>
+                                            <div class="field">
+                                                <input type="text" name="" id="" placeholder="Contraseña">
+                                            </div>
+                                            <div class="ui field aligned center">
+                                                <label for="">¿Olvidó su <a href="#"> contraseña</a>?</label>
+                                            </div>
+                                            <div class="ui two buttons">
+                                                <button class="ui button positive basic">
+                                                    Ingresar
+                                                </button>
+                                                <button class="ui button teal basic" onclick="registro()" id="mod4">
+                                                    Registrarme
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        </div>
+    </div>
+
+    <!-- modal-->
+    <div class="ui modal 2" id="mod">
+        <i class="close icon"></i>
+        <div class="header">
+            Barry Allen
+        </div>
+        <div class="image content">
+            <div class="ui medium image">
+                <img src="Css/img/flash2.png">
+            </div>
+            <div class="description">
+                <div class="ui header">Éste es Flash (Barry allen)</div>
+                <p>Para encontrar más información referente al hombre más rápido vivo <a href="https://www.gravatar.com"
+                        target="_blank">DC</a>
+                    También podras encontrar informaciónreferente a otros héroes del DCU.</p>
+                <p>
+                    <h3>Precio:</h3> $250'000'00
+                </p>
+            </div>
+        </div>
+        <div class="actions">
+            <div class="ui vertical animated positive button">
+                <div class="hidden content">Comprar</div>
+                <div class="visible content">
+                    <i class="dollar sing icon"></i>
+                </div>
+            </div>
+            <div class="ui black deny button">
+                close
+            </div>
+
+        </div>
+    </div>
+    <!-- Modal Batman -->
+    <div class="ui modal 3" id="mod2">
+        <i class="close icon"></i>
+        <div class="header">
+            Bruce Wayne
+        </div>
+        <div class="image content">
+            <div class="ui medium image">
+                <img src="Css/img/batman.png">
+            </div>
+            <div class="description">
+                <div class="ui header">Éste es Batman (Bruce Wayne)</div>
+                <p>Para encontrar más información referente al hombre conocido como el "caballero de la noche" <a href="https://www.gravatar.com"
+                        target="_blank">DC</a>
+                    También podras encontrar informaciónreferente a otros héroes del DCU.</p>
+                <p>
+                    <h3>Precio:</h3> $150'000'00
+                </p>
+            </div>
+        </div>
+        <div class="actions">
+            <div class="ui vertical animated positive button">
+                <div class="hidden content">Comprar</div>
+                <div class="visible content">
+                    <i class="dollar sing icon"></i>
+                </div>
+            </div>
+            <div class="ui black deny button">
+                close
+            </div>
+
+        </div>
+    </div>
+    <!--Modal donacion-->
+    <div class="ui mini modal">
+        <div class="header">Selecciona lo que deseas donar</div>
+        <div class="content ">
+            <div class="grouped fields">
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" type="checkbox" name="1" id="1" checked="checked">
+                        <label>$- 1 USD</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" type="checkbox" name="1" id="1">
+                        <label>$- 10 USD</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" type="checkbox" name="1" id="1">
+                        <label>$- 100 USD</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="extra content ">
+            <div class="ui two buttons">
+                <div class="ui positive button">Donar</div>
+                <div class="ui red button">Cancelar</div>
+            </div>
+        </div>
+    </div>
+    <!--Modal registro-->
+    <div class="ui tiny modal ">
+        <i class="close icon"></i>
+        <div class=" ui header center aligned">
+            Formulario de registro
+        </div>
+        <div class="content">
+            <div class="ui form">
+                <div class="field ">
+                    <label for="">Nombre Completo</label>
+                    <input type="text" name="" id="" placeholder="Usuario">
+                </div>
+                <div class="field">
+                    <label for="">Correo Electrónico</label>
+                    <input type="text" name="" id="" placeholder="Contraseña">
+                </div>
+                <div class="field">
+                    <label for="">Fecha de nacimiento separada por DD/MM/AAAA </label>
+                    <input type="text" name="" id="" placeholder="Contraseña">
+                </div>
+                <div class="field">
+                    <label for="">Cuenta bancaria</label>
+                    <input type="text" name="" id="" placeholder="Contraseña">
+                </div>
+                <div class="extra content">
+                    <button class="ui button positive">Completar</button>
+                    <button class="ui cancel button">Cancelar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="Js/jquery-3.3.1.min.js"></script>
+    <script src="Js/semantic.min.js"></script>
+    <script src="Js/custom.js"></script>
+    <script src="Js/pnotify.js"></script>
+</body>
+
+</html>

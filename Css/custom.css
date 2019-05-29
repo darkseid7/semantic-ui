@@ -1,0 +1,56 @@
+div.row{
+    margin-top: 70px;
+}
+
+div.ui.vertical.animated.positive.button{
+    margin-top: -4px;
+}
+
+div.ui.animated.fade{
+    margin-top: -4px;
+}
+
+div.ui.stackable.menu{
+        position:fixed; 
+        top:0; 
+        left:0; 
+        z-index:99;         
+}
+
+div.ui.toggle:hover{
+ 
+
+}
+
+div.field{
+    
+    
+}
+/* div.ui.grid{
+    background-color: teal;
+} */
+
+
+
+
+/* div.ui.card{
+
+    position:fixed; 
+    top:70px; 
+    left:0; 
+    z-index:99; 
+    
+} */
+
+/* div.ui.raised{
+    background-color: #e0e1e2e3;
+}
+
+div.ui.raised.very.padded.text.container.segment >div.ui.button{
+    background-color:#b2bec3;
+}
+
+div.iu.pop{
+    background-color: #b2bec3;
+}
+ */
